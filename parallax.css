@@ -1,0 +1,73 @@
+body {
+  background: #0b273a;
+}
+
+.site-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: #0b273a;
+  background-image:
+    radial-gradient(circle at 78% 42%, rgba(232, 165, 38, 0.13), transparent 34%),
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: auto, 64px 64px, 64px 64px;
+}
+
+.site-backdrop img {
+  position: absolute;
+  width: min(46vw, 660px);
+  right: 3vw;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.13;
+  filter: saturate(0.75) contrast(1.08);
+}
+
+.site-header {
+  z-index: 10;
+}
+
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header,
+.hero {
+  background: rgba(11, 39, 58, 0.82);
+}
+
+.services,
+.markets {
+  background: rgba(244, 245, 240, 0.94);
+  backdrop-filter: blur(3px);
+}
+
+.approach {
+  background: rgba(11, 39, 58, 0.9);
+}
+
+.contact {
+  background: rgba(7, 27, 42, 0.91);
+}
+
+footer {
+  background: rgba(4, 19, 30, 0.96);
+}
+
+@media (max-width: 700px) {
+  .site-backdrop img {
+    width: 86vw;
+    right: -22vw;
+    opacity: 0.1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { animation: none; }
+}

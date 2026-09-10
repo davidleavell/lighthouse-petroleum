@@ -1,0 +1,10 @@
+.site-header,
+.hero {
+  background-color: #0b273a;
+}
+
+@media (max-width: 850px) {
+  .site-header nav {
+    background: #0b273a;
+  }
+}
