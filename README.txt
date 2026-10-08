@@ -20,3 +20,5 @@ same directory so the styles, animation, and images load correctly.
 
 The website is also currently hosted at:
 https://lighthousepetroleum.com
+
+Deployment note: GitHub Pages publishing was refreshed after repository visibility was restored.
